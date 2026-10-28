@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--head of webiste-->
+    <header>
+        <h1>Programming Worskhop</h1>
+        <p>Coding from experiance</p>
+    </header>
+    
+    <!--link to jump in section each page-->
+    <nav>
+        <a href="#Schedule">About</a>
+        <a href="#register">event Schedule</a>
+        <a href="#about">Registration</a>
+    </nav>
+    
+    <!--Section id-->
+    <section id="about">
+        <h2>About the Event</h2>
+
+        
+        <article>
+            <!--Introducion one speaker-->
+            <h3>Introduction to Java</h3>
+            <!--Introducion activity-->
+            <p>Learn basic Java programming.</p>
+        </article>
+        
+        <article>
+            <!--Introducion one speaker-->
+            <h3>Coding Challenge</h3>
+            <!--Introducion activity-->
+            <p>Students solve simple programming problems.</p>
+        </article>
+    </section><br><br>
+    
+
+
+    <section id="event_Schedule">
+        <h2>Event Schedule</h2>
+
+        <!--make table-->
+        <table border="1">
+            
+            <!--make-->
+            <tr>
+                <!--make header table-->
+                <th>Time</th>
+                <td>Activity</td>
+                <td>Venue</td>
+                <td>Person In Charge</td>
+            </tr>
+            <tr>
+                <!--data in table-->
+                <td>8:00</td>
+                <td>Read book</td>
+                <td>Library</td>
+                <td>Pn Suhaila</td>
+            </tr>
+
+            <tr>
+                <!--data in table-->
+                <td>10:00</td>
+                <td>Make code</td>
+                <td>Lab</td>
+                <td>Pn Adibah</td>
+            </tr>
+
+            <tr>
+                <!--data in table-->
+                <td>12:00</td>
+                <!--combine 3 column in one cell-->
+                <td colspan="3">rest</td>
+            </tr>
+
+            <tr>
+                <td>1:00</td>
+                <td>Study Java</td>
+                <td>lab mp3</td>
+                <td>Pn Noor</td>
+            </tr>
+        
+            <tr>
+                <td>2:00</td>
+                <td>Study Python</td>
+                <!--combine 3 row in one cell-->
+                <td rowspan="2">Lab</td>
+                <td>Pn Kamariah</td>
+            </tr>
+
+            <tr>
+                <td>4:00</td>
+                <td>Read book</td>
+                <td>Pn Cik Kamal</td>
+            </tr>
+        </table>
+    </section><br><br>
+
+    
+    <section id="Registration">
+        <h2>Registration</h2>
+
+        <form action="register.html" method="post">
+
+            <!--input value in text-->
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="matric_number">Matrik number:</label><br>
+            <input type="text" id="matric_number" name="matric_number"><br><br>
+
+            <label for="email">email:</label><br>
+            <input type="text" id="email" name="email"><br><br>
+
+
+            <!--input value in tick-->
+            <label>Year study</label><br>
+            <input type="radio" id="year_study1" name="Year1"  value="year_study1">
+            <label for="year_study1">year 1</label><br>
+
+            <input type="radio" id="year_study2" name="Year2"  value="year_study2">
+            <label for="year_study2">year 2</label><br>
+
+            <input type="radio" id="year_study3" name="Year3"  value="year_study3">
+            <label for="year_study3">year 3</label><br>
+
+            <input type="radio" id="year_study4" name="Year4"  value="year_study4">
+            <label for="year_study4">year 4</label><br><br>
+
+            <!--input value in tick-->
+            <input type="checkbox" id="session1" name="session1" value="session1">
+            <label for="session1">Session 1</label><br>
+
+            <input type="checkbox" id="session2" name="session2" value="session2">
+            <label for="session2">Session 2</label><br>
+
+            <input type="checkbox" id="session3" name="session3" value="session3">
+            <label for="session3">Session 3</label><br><br>
+
+            <!--input value in select option-->
+            <label id="programmer">Programmer or Faculty</label><br>
+            <select id="programme" name="programme">
+                <option value="Software_Engineering">Software Engineering</option>
+                <option value="Informatic_Maritime">Informatic Maritime</option>
+                <option value="Mobile_Computing">Mobile Computing</option>
+                <option value="Cloude_Computing">Cloude Computing</option>
+            </select><br><br>
+
+            <input type="submit" value="submit">
+
+        </form>
+    </section>
+
+    <footer>
+        Copy right @ 2032
+    </footer>
+
+</body>
+</html>
