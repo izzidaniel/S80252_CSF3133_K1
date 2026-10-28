@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+</head>
+<body>
+
+    <header>
+        <h1>My Personal Profile</h1>
+    </header>
+
+    <nav>
+        <a href="#personal">Personal Information</a> |
+        <a href="#form">User Form</a> |
+        <a href="#about">About Me</a>
+    </nav>
+
+    <section id="personal">
+        <h2>Personal Information</h2>
+
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Occupation</th>
+            </tr>
+            <tr>
+                <td>Izzi</td>
+                <td>21</td>
+                <td>Student</td>
+            </tr>
+            <tr>
+                <td>Ali</td>
+                <td>22</td>
+                <td>Programmer</td>
+            </tr>
+        </table>
+    </section>
+
+
+
+
+    
+    <section id="form">
+        <h2>User Information Form</h2>
+
+        <form action="submit_form.php" method="post">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <br><br>
+
+            <label>Gender:</label><br>
+
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+
+            <label>Favorite Hobbies:</label><br>
+
+            <input type="checkbox" id="gaming" name="hobbies" value="Gaming">
+            <label for="gaming">Gaming</label><br>
+
+            <input type="checkbox" id="music" name="hobbies" value="Music">
+            <label for="music">Music</label><br>
+
+            <input type="checkbox" id="reading" name="hobbies" value="Reading">
+            <label for="reading">Reading</label><br><br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </section>
+
+
+
+
+
+    <section id="about">
+        <article>
+            <h2>About Me</h2>
+            <p>My name is Izzi, I am a student from UMT.</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>Copyright 2026 My Personal Profile</p>
+    </footer>
+
+</body>
+</html>
