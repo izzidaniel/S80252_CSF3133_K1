@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Bakery</title>
+</head>
+<body>
+
+    <div id="header">
+        <h1>
+            Campus Bakery
+            <span>Fresh Bread, Happy Days!</span>
+        </h1>
+    </div>
+
+    <div id="nav">
+        <nav>
+            <a href="#header">Header</a> |
+            <a href="#content">Content</a> |
+            <a href="#footer">Footer</a>
+        </nav>
+    </div>
+
+    <div id="content">
+
+        <h2>This information about this cafe</h2>
+
+        <p>
+            Welcome to <strong>Campus Bakery</strong><br>
+            We provide <em>fresh bread</em> and
+            <span>delicious cakes</span> every day.
+        </p>
+
+        <form oninput="z.value=(parseInt(cupcakes.value)*3)+(parseInt(slices.value)*5)">
+
+            Customer Name:
+            <input type="text" name="customer" placeholder="Enter your name" required autofocus><br>
+
+            Phone Number:
+            <input type="tel" name="phone" required><br>
+
+            Email:
+            <input type="email" name="email" required><br>
+
+            Pick-up Date:
+            <input type="date" name="date"><br>
+
+            Pick-up Time:
+            <input type="time" name="time"><br>
+
+            Flavour:
+            <input type="text" name="flavour" list="flavour" placeholder="Choose flavour">
+
+            <datalist id="flavour">
+                <option value="Chocolate">
+                <option value="Vanilla">
+                <option value="Strawberry">
+                <option value="BlueBerry">
+            </datalist>
+            <br>
+
+            Icing Colour:
+            <input type="color" name="icing"><br>
+
+            Sweetness Level:
+            <input type="range" name="sweetness" min="1" max="5" step="1" value="3"><br>
+
+            <h3>Price Calculator</h3>
+
+            Cupcakes (RM3.00 each):
+            <input type="number" name="cupcakes" min="0" value="0"><br>
+
+            Cake Slices (RM5.00 each):
+            <input type="number" name="slices" min="0" value="0"><br>
+
+            Total Price: RM
+            <output name="z" for="cupcakes slices">0</output>
+
+            <br><br>
+
+            <input type="submit" value="Submit Order"> 
+            <input type="reset" value="Submit Reset">
+
+        </form>
+
+    </div>
+
+    <div id="sidebar">
+
+        <h2>Price List</h2>
+
+        <ul>
+            <li>Cupcakes RM3.00</li>
+            <li>Cake Slices RM5.00</li>
+            <li>Roti Kosong RM5.60</li>
+        </ul>
+
+        <label>If Order &gt; 10 pieces get free drink</label>
+        <p>Price includes tax &nbsp; and service.</p>
+
+    </div>
+
+    <div id="footer">
+        <footer>
+            Campus Bakery &reg;<br>
+            Copyright &copy; 2026
+        </footer>
+    </div>
+
+</body>
+</html>
