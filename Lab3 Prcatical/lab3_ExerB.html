@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Ticket Booking</title>
+</head>
+<body>
+
+<!--
+PART 1: LIST OF ERRORS CORRECTED
+
+1. Line 1: Corrected the DOCTYPE declaration.
+2. Line 2: Corrected the opening HTML tag.
+3. Line 4: Corrected the meta charset declaration.
+4. Line 6: Corrected the title tag.
+5. Line 10: Closed the span tag before closing h1.
+6. Line 13: Replaced span with div for the content section.
+7. Line 17: Used &lt; and &amp; for special characters.
+8. Line 20: Corrected the ticket calculation using oninput.
+9. Line 26: Corrected the email input type.
+10. Line 35: Matched the datalist ID with the input list attribute.
+11. Line 42 and 46: Added min="0" to ticket quantity inputs.
+12. Line 51: Corrected the rating range to min="1" and max="5".
+13. Line 56: Corrected the output element for total tickets.
+14. Line 63: Replaced span with div for the footer.
+15. Line 69: Corrected the closing body and html tags.
+16. W3C VALIDATOR FIXES: Removed all trailing slashes (/>) from void elements to follow pure HTML5 standards and moved this comment block inside <body> so <meta charset> is within the first 1024 bytes.
+-->
+
+<div id="header">
+    <!-- Header section -->
+    <h1>e-Ticket <span>Your Campus Cinema</span></h1>
+</div>
+
+<div id="content">
+    <h2>Book Your Ticket</h2>
+
+    <!-- Promotion section -->
+    <p>Promotion: tickets &lt; RM10 for students &amp; staff!</p>
+
+    <!-- Booking form and automatic ticket and price calculation -->
+    <form action="#"
+    oninput="
+    this.elements['total'].value = Number(this.elements['adult'].value) + Number(this.elements['child'].value);
+    this.elements['price'].value = (Number(this.elements['adult'].value) * 12) + (Number(this.elements['child'].value) * 8);
+    ">
+
+        <!-- Customer name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required autofocus><br>
+
+        <!-- Customer email -->
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email"><br>
+
+        <!-- Customer phone number -->
+        <label for="phone">Phone number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required><br>
+
+        <!-- Show date -->
+        <label for="date">Show date:</label>
+        <input type="date" id="date" name="date"><br>
+
+        <!-- Show time -->
+        <label for="time">Show time:</label>
+        <input type="time" id="time" name="time"><br>
+
+        <!-- Movie suggestions -->
+        <label for="movie">Movie:</label>
+        <input id="movie" name="movie" list="movielist"><br>
+
+        <datalist id="movielist">
+            <option value="Space Rangers">
+            <option value="Kampung Comedy">
+            <option value="Ocean Adventure">
+        </datalist>
+
+        <!-- Adult ticket quantity -->
+        <label for="adult">Adult tickets:</label>
+        <input type="number" id="adult" name="adult" min="0" value="0"><br>
+
+        <!-- Child ticket quantity -->
+        <label for="child">Child tickets:</label>
+        <input type="number" id="child" name="child" min="0" value="0"><br>
+
+        <!-- Service rating -->
+        <label for="rating">Rate our service:</label>
+        <input type="range" id="rating" name="rating" min="1" max="5" step="1"><br>
+
+        <!-- Display total number of tickets -->
+        Total tickets:
+        <output name="total" for="adult child">0</output><br>
+
+        <!-- Display total ticket price: Adult RM12, Child RM8 -->
+        Total price: RM
+        <output name="price" for="adult child">0</output><br>
+
+        <input type="submit" value="Book Now">
+
+    </form>
+</div>
+
+<!-- Now Showing section: displays at least three movies -->
+<div id="now-showing">
+    <h2>Now Showing</h2>
+
+    <p>
+        <strong>Polis Evo</strong>
+        <span>PG</span>
+        <a href="https://youtu.be/VeDVDevOHWY?si=7fiXVyTgF1OvtwUW" target="_blank">Watch Trailer</a>
+    </p>
+
+    <p>
+        <strong>Kampung Boy</strong>
+        <span>13+</span>
+        <a href="https://youtu.be/P9o01enLFa4?si=6zNZIkYAeochpY66" target="_blank">Watch Trailer</a>
+    </p>
+
+    <p>
+        <strong>Kudrat</strong>
+        <span>U</span>
+        <a href="https://youtu.be/wdobl7V79zQ?si=1n8TBFOhBGDv64Yb" target="_blank">Watch Trailer</a>
+    </p>
+</div>
+
+<!-- Footer section with HTML entities -->
+<div id="footer">
+    <p>e-Ticket&reg; &ndash; Campus Cinema &lt; RM10 every Tuesday</p>
+</div>
+
+</body>
+</html>
