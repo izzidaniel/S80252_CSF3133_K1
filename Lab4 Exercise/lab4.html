@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style type="text/css">
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+    <style type="text/css"> /* internal */
+        P {
+            color: red;
+        }
+    </style>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style type="text/css">
+    h1 {
+        text-decoration: underline
+    }
+    </style>
+
+    <style type="text/css">
+        a:visited {
+            color: purple;
+        }
+
+        a:hover {
+            color: green;
+        }
+
+        a:active {
+            color: pink;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Upin dan Ipin</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section>
+        <video width="400" height="300" controls>
+            <source src="upinipin.mp4" type="video/mp4">
+            Browser anda tidak menyokong video.
+        </video>
+        <p>Upin dan Ipin Deepavali</p>
+
+        <form action="register.html" method="post" >
+
+            <label for="Name">Name</label>
+            <input type="text" id="Name" name="Name"><br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email"><br>
+
+            <label>Gender:</label><br>
+
+            <!-- bulatan input dulu baru tulisan -->
+            <input type="radio" id="male" name="gender" value="male">
+
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+
+            <label>Favorite hobbies</label><br>
+
+            <input type="checkbox" id="read" name="read" value="read">
+            <label for="read">read</label>
+
+            <input type="checkbox" id="code" name="code" value="code">
+            <label for="code">Coding</label><br><br>
+
+            <input type="submit" value="submit">
+        </form>
+    </section>
+
+    <article>
+        <h2>
+            Upin dan Ipin episode Deespavali
+        </h2>
+    </article>
+    <footer>
+        &copy; Hak cipta Terpelihara
+    </footer>
+</body>
+</html>
