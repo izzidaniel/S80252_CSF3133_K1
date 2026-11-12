@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set character encoding and responsive viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Link external CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS to style h3 headings -->
+    <style>
+        h3 {
+            color: orange;
+        }
+    </style>
+
+    <!-- Internal CSS to style paragraphs -->
+    <style>
+        p {
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header section containing the webpage title -->
+    <header>
+        <h1>Tourisme</h1>
+    </header>
+
+    <!-- Navigation bar linking to each section -->
+    <nav>
+        <ul>
+            <li><a href="#destination">destination</a></li>
+            <li><a href="#video">video</a></li>
+            <li><a href="#trip">trip</a></li>
+        </ul>
+    </nav>
+
+    <!-- Display the number of filled trip seats -->
+    <meter min="0" max="40" value="28"></meter>
+
+    <!-- Destinations section containing three promotional articles -->
+    <section id="destination">
+        <h2>Our destination</h2>
+
+        <!-- First destination: Terengganu -->
+        <article class="card">
+            <h3>Terengganu</h3>
+            <p>Visit Pulau Redang</p>
+            <p class="old_price">Old price: RM200</p>
+            <p class="price">New Price: RM150</p>
+        </article>
+
+        <!-- Second destination: Kelantan -->
+        <article class="card">
+            <h3>Kelantan</h3>
+            <p>Traditional culture and local fruit</p>
+            <p class="old_price">Old price: RM200</p>
+            <p class="price">New Price: RM150</p>
+        </article>
+
+        <!-- Third destination: Pahang -->
+        <article class="card">
+            <h3>Pahang</h3>
+            <p>Visit Genting Highland</p>
+            <p class="old_price">Old price: RM200</p>
+            <p class="price">New Price: RM150</p>
+        </article>
+    </section>
+
+    <!-- Video section containing promotional videos and captions -->
+    <section id="video">
+        <h2>Video</h2>
+
+        <!-- Terengganu promotional video -->
+        <figure>
+            <video width="400" height="300" controls>
+                <source src="terengganu.mp4" type="video/mp4">your browser not support
+            </video>
+            <figcaption>this is Pulau Redang at Terengganu</figcaption>
+        </figure>
+
+        <!-- Kelantan promotional video -->
+        <figure>
+            <video width="400" height="300" controls>
+                <source src="kelantan.mp4" type="video/mp4">your browser not support
+            </video>
+            <figcaption>this is Culture at kelantan</figcaption>
+        </figure>
+
+        <!-- Pahang promotional video -->
+        <figure>
+            <video width="400" height="300" controls>
+                <source src="pahang.mp4" type="video/mp4">your browser not support
+            </video>
+            <figcaption>This is genting Higland at Pahang</figcaption>
+        </figure>
+    </section>
+
+    <!-- Trip section containing the registration form -->
+    <section id="trip">
+        <h2>Trip</h2>
+
+        <!-- Form to collect visitor details and trip interests -->
+        <form class="trip-form" action="register.html" method="post">
+
+            <!-- Visitor name input -->
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <!-- Visitor email input -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <!-- Radio buttons to select traveller type -->
+            <label>Traveller type</label><br>
+
+            <input type="radio" id="student" name="Traveller" value="student">
+            <label for="student">Student</label>
+
+            <input type="radio" id="staff" name="Traveller" value="staff">
+            <label for="staff">Staff</label>
+
+            <input type="radio" id="public" name="Traveller" value="public">
+            <label for="public">public</label><br><br>
+
+            <!-- Checkboxes to select trip interests -->
+            <label>Interest</label><br>
+
+            <input type="checkbox" id="island" name="island" value="island">
+            <label for="island">Island</label>
+
+            <input type="checkbox" id="food" name="food" value="food">
+            <label for="food">Food</label>
+
+            <input type="checkbox" id="culture" name="culture" value="culture">
+            <label for="culture">Culture</label>
+
+            <input type="checkbox" id="nature" name="nature" value="nature">
+            <label for="nature">Nature</label><br><br>
+
+            <!-- Submit the registration form -->
+            <input type="submit" value="submit">
+        </form>
+    </section>
+
+    <!-- Footer containing copyright and contact information -->
+    <footer>
+        <p>&copy; Hakcipta Terpelihara ID Berhad</p>
+        <address> Email: <a href="mailto:tourisme@gmail.com">tourisme@gmail.com</a></address>
+    </footer>
+</body>
+</html>
