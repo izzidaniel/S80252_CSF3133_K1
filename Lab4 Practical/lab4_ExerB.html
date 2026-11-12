@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Café Campus</title>
+
+    <style>
+        /* Navigation bar - remove bullet points */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Link colours */
+        a:link {
+            color: #1A5276;
+        }
+
+        a:hover {
+            color: #E67E22;
+        }
+
+        a:visited {
+            color: #7D3C98;
+        }
+
+        a:active {
+            color: #C0392B;
+        }
+
+        /* Heading style */
+        h1 {
+            text-decoration: overline;
+        }
+
+        /* Paragraph style */
+        p {
+            color: #333333;
+            text-align: justify;
+        }
+
+        /* Introduction section */
+        .intro {
+            font-size: 18px;
+            background-color: #FDEBD0;
+        }
+
+        /* Highlight the current menu price */
+        .highlight {
+            font-weight: bold;
+            color: #C0392B;
+        }
+
+        /* Remove bullet points */
+        ul {
+            list-style-type: none;
+        }
+
+        /* Add overline to heading */
+        h1 {
+            text-decoration: overline;
+        }
+
+        /* Highlight menu price */
+        .highlight {
+            font-weight: bold;
+            color: red;
+        }
+
+        /* Change link colour when hovering */
+        a:hover {
+            color: #E67E22;
+        }
+    </style>
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="cafe.css">
+
+</head>
+
+<body>
+
+    <!-- Error explanations from the original HTML and CSS code -->
+    <!-- 
+    Error 1 (Line 7): HTML comment used inside CSS. Changed to CSS comment.
+    Error 2 (Line 9): list-style-type: no is wrong. Changed to none.
+    Error 3 (Line 24): overlined is invalid. Changed to overline.
+    Error 4 (Line 27): Missing colon after color. Added colon.
+    Error 5 (Line 32): #intro does not match class="intro". Changed to .intro.
+    Error 6 (Line 35): Missing closing brace for .intro.
+    Error 7 (Line 36): highlight is missing a class selector. Changed to .highlight.
+    Error 8 (Line 43): href="menu" should be href="#menu".
+    Error 9 (Line 58): Duplicate id="item". IDs must be unique.
+    Error 10 (Line 65): Duplicate id="item". Changed to class="item".
+    Error 11: controls is optional, not a required attribute.
+    Error 12 (Line 71): type="mp4" is incorrect. Changed to type="video/mp4".
+    -->
+
+    <!-- Website header -->
+    <header>
+        <h1>e-Café Campus</h1>
+    </header>
+
+    <!-- Navigation bar -->
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <!-- Link to feedback section -->
+            <li><a href="#feedback">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <!-- Menu section -->
+    <section id="menu">
+        <h2>Today's Menu</h2>
+
+        <!-- Introduction paragraph -->
+        <p class="intro">Freshly brewed coffee and local delights every
+            day.</p>
+
+        <!-- First menu item -->
+        <article class="item">
+            <h3>Kopi Tarik</h3>
+            <p>Only <span class="old_price">RM4.50</span>
+                <span class="highlight">RM 3.50</span></p>
+        </article>
+
+        <!-- Second menu item -->
+        <article class="item">
+            <h3>Nasi Lemak</h3>
+            <p>Only <span class="old_price">RM4.50</span>
+                <span class="highlight">RM 5.00</span></p>
+        </article>
+    </section>
+
+    <!-- Video section -->
+    <section id="video">
+        <h2>Watch Our Story</h2>
+
+        <!-- Video with caption -->
+        <figure>
+            <video width="400" height="300" controls>
+                <source src="cafe.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <figcaption>Welcome to e-Café Campus</figcaption>
+        </figure>
+    </section>
+
+    <!-- Customer feedback section -->
+    <section id="feedback">
+        <h2>Customer feedback</h2>
+
+        <!-- Feedback form -->
+        <form action="register.html" method="post">
+
+            <!-- Name input -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <br><br>
+
+            <!-- Email input -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <br><br>
+
+            <!-- Visit type selection using radio buttons -->
+            <p>Visit Type:</p>
+            <input type="radio" name="visit" value="Dine-in"> Dine-in
+            <input type="radio" name="visit" value="Take-away"> Take-away
+
+            <br><br>
+
+            <!-- Favourite items selection using checkboxes -->
+            <p>Favourite Items:</p>
+            <input type="checkbox" name="favourite" value="Kopi Tarik"> Kopi Tarik
+            <input type="checkbox" name="favourite" value="Nasi Lemak"> Nasi Lemak
+            <input type="checkbox" name="favourite" value="Teh Ais"> Teh Ais
+
+            <br><br>
+
+            <!-- Submit feedback form -->
+            <button type="submit">Submit</button>
+
+        </form>
+    </section>
+
+    <!-- Footer and contact information -->
+    <footer id="contact">
+        <p>&copy; 2026 e-Café Campus</p>
+
+        <!-- Email contact link -->
+        <address>
+            Email: <a href="mailto:cafe@gmail.com">cafe@gmail.com</a>
+        </address>
+    </footer>
+
+</body>
+</html>
