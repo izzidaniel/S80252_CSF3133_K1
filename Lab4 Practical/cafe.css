@@ -1,0 +1,31 @@
+/* Remove bullet points and default spacing from navigation list */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style navigation links */
+nav a {
+    display: block;
+    background-color: lightgreen;
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* Change navigation background colour when hovering */
+nav a:hover {
+    background-color: orange;
+}
+
+/* Add line-through to old menu prices */
+.old_price {
+    text-decoration: line-through;
+}
+
+/* Make video responsive */
+video {
+    max-width: 100%;
+    height: auto;
+}
