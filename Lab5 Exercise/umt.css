@@ -1,0 +1,46 @@
+body {
+    background-color: lightcyan;
+    font-family: Poppins, sans-serif;
+}
+
+nav {
+    background-color: white;
+}
+
+nav a:hover {
+    background-color: yellowgreen;
+
+}
+
+table {
+    background-color:  white;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+table th {
+    border: 1px solid black;
+    border-top: 16px;
+    border-bottom: 12px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+footer {
+    background-color: lightskyblue;
+    text-align: center;
+    padding: 10px;
+}
+
+header, nav, section, article, footer {
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
