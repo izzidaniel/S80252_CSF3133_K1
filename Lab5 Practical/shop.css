@@ -1,0 +1,118 @@
+/* General styling for the whole page body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url("paper.gif");
+    background-repeat: no-repeat;
+    background-position: right top;
+    margin: 0;
+}
+
+/* Styling for the header section */
+header {
+    background-image: url("paper.gif"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+    background-color: #333; 
+}
+
+/* Styling and alignment for the main title */
+h1 {
+    font-family: 'Merriweather', serif;
+    color: #1B4F72;
+    text-align: center;
+    margin: 0;
+}
+
+/* Styling for the navigation container */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Styling for the list items */
+nav li {
+    float: left;
+}
+
+/* Styling for the navigation links */
+nav a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Styling for link hover effect */
+nav a:hover {
+    background-color: #111;
+}
+
+/* Styling for the active link */
+nav a.active {
+    background-color: #4CAF50; 
+}
+
+/* Alignment and layout for the main content area */
+main {
+    width: 90%;
+    max-width: 980px;
+    margin: 20px auto;
+}
+
+/* Formatting for text readability */
+p {
+    line-height: 1.6;
+}
+
+/* Styling for the table structure */
+#products {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Styling for table borders and cells */
+#products td, #products th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* Styling and alignment for table headers */
+#products th {
+    background-color: #04AA6D;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+/* Alignment for the price column */
+#products td:nth-child(3) {
+    text-align: right;
+}
+
+/* Styling for alternating table rows */
+#products tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Styling for table row hover effect */
+#products tr:hover {
+    background-color: #ddd;
+}
+
+/* Styling for the footer section */
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}
