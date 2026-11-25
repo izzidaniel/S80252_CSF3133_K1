@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Rock, Paper, Scissor Game</h1>
+        <p>guess and win</p>
+
+    </header>
+
+    <section>
+        <h2>Please enter your name</h2>
+        <label for="name">Your name:</label>
+        <input type="text" id="playerName">
+        <button type="button" onclick="startGame()">Start Game</button>
+        <p id="welcomeMsg"></p>
+    </section>
+
+    <br>
+
+    <section id="gamesection">
+        <button type="button" onclick="playRound('rock')">Rock</button>
+        <button type="button" onclick="playRound('paper')">Paper</button>
+        <button type="button" onclick="playRound('scissors')">Scissor</button>
+
+        <br><br>
+
+        <img id="playerImg" src="rock.png" alt="player choice">
+        <img id="computerImg" src="rock.png" alt="computer choice">
+    </section>
+
+    <section>
+        <p id="result"></p>
+        <p>Wins: <span id="wins">0</span> | Losses: <span id="losses">0</span> | Draws: <span id="draws">0</span></p>
+
+
+    </section>
+
+    <section>
+        <h2>History</h2>
+        <table id="history">
+            <tr>
+                <th>Round</th>
+                <th>Your</th>
+                <th>computer</th>
+                <th>result</th>
+            </tr>
+        </table>
+    </section>
+
+    <section id="startGame">
+        <button type="button" onclick="resetGame()">Reset</button>
+        <p id="summary"></p>
+        <button type="button" onclick="showSummary()">showSummary</button>
+    </section>
+
+    <footer>
+        <p id="startTime"></p>
+        <p id="startTime">&copy; 2026 Computer Science Club</p>
+    </footer >
+
+
+    <script src="game.js"></script>
+</body>
+</html>
