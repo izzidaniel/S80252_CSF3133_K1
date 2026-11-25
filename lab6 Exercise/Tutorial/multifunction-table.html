@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multifunction Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+        table {
+            /*garsian 2 table asing jadi satu  */
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        input, button {
+            padding: 10px;
+            margin: 5px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Multifunction Table Generator</h2>
+    <label for="rows">Number of Rows:</label>
+    <!-- number - masuk nombor je-->
+    <input type="number" id="rows" min="1" placeholder="izzi">
+    <br>
+    <label for="columns">Number of Columns:</label>
+    <input type="number" id="columns" min="1" placeholder="Columns">
+    <br>
+    <button type="button" onclick="generateTable()">Generate Table</button>
+    <br><br>
+    <div id="tableContainer"></div>
+    
+    <script src="multiplication-table.js"></script>
+
+    </script>
+    
+</body>
+</html>
